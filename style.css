@@ -1,0 +1,1743 @@
+:root {
+    --font-size: 62,5%;
+    --green: #E3FE0F;
+    --white: #FFFFFF;
+    --dark: #17161E;
+    --grace: #838383;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'neueMachina-bold';
+    src: url(/fonts/PPNeueMachina-Ultrabold.otf) format('OpenType');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neueMachina-regular';
+    src: url(/fonts/PPNeueMachina-Regular.otf) format('OpenType');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neueMachina-light';
+    src: url(/fonts/PPNeueMachina-Light.otf) format('OpenType');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'imbpLexMono-regular';
+    src: url(/fonts/IBMPlexMono-Regular.ttf) format('OpenType');
+    font-weight: 400;
+    font-style: normal;
+}
+
+svg {
+    flex-shrink: 0;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+main {
+    overflow-x: hidden;
+}
+.body {
+    background-color: var(--dark);
+    background-image: url("/pictures/Фоновые\ элементы\ и\ подложки.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p, span {
+    color: var(--white);
+    font-family: 'imbpLexMono-regular';
+}
+
+h3 {
+    color: var(--white);
+    font-family: 'neueMachina-light';
+}
+h2 {
+    color: var(--white);
+    font-size: 1.7rem;
+    font-family: 'neueMachina-bold';
+}
+.textH3 {
+    color: var(--white);
+    font-family: 'neueMachina-light';
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-size: 1.85rem;
+    font-family: 'neueMachina-bold';
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--grace);
+    font-family: 'neueMachina-light';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 18px;
+}
+
+.hideTab {
+    display: none;
+}
+
+.hideTab2 {
+    display: none;
+}
+
+.header > .wrapper {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.bigHeader {
+    display: none;
+}
+
+.dApp {
+    width: 91px;
+    height: 30px;
+    background-color:rgb(0, 0, 0, 0);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    font-family: 'neueMachina-light';
+}
+.dApp:hover {
+    background-color: var(--green);
+    color: var(--dark);
+}
+.dApp:active {
+    background-color: var(--green);
+    color: var(--dark);
+    box-shadow: 0 0 10px var(--green);
+}
+
+.burger {
+    width: 30px;
+    height: 25px;
+    background-color:rgb(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.dAppandBurger {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+}
+
+.section {
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.circle {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 17px;
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate {  
+    0% { transform: rotate(0deg); }  
+    100% { transform: rotate(360deg); }  
+}
+
+.line {
+    position: relative;
+    transform: translateY(-10px);
+    margin-left: -10px;
+    scale: 85%;
+}
+
+.decent {
+    position: relative;
+}
+
+.viewNode {
+    background-color:var(--green);
+    color: var(--dark);
+    border-radius: 10px;
+    border: none;
+    height: 38px;
+    width: 140px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'neueMachina-regular';
+}
+.viewNode:hover {
+    box-shadow: 0 0 10px var(--green);
+}
+
+.textAsWell {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.7rem;
+}
+
+.arrow {
+    margin-top: 3px;
+}
+
+.buy {
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid var(--grace);
+    color: var(--white);
+    border-radius: 10px;
+    width: 140px;
+    height: 38px;
+    padding: 9px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'imbpLexMono-regular';
+}
+.buy:hover {
+    background-color: var(--green);
+    color: var(--dark);
+}
+.buy:hover svg{
+    stroke: var(--dark);
+}
+.buy:active {
+    background-color: var(--green);
+    color: var(--dark);
+    box-shadow: 0 0 10px var(--green);
+    background-color: var(--green);
+}
+
+.viewBuy {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.textDownViewBuy {
+    display: flex; 
+    justify-content: center;
+    margin-top: 44px;
+    gap: 15px;
+    font-size: 0.8rem;
+}
+
+.micro {
+    display: none;
+}
+/* --------------------------------Why choose us ---------------------------------------------------*/
+.hWhyChooseUs {
+    margin: 0px 0px 30px;
+    font-size: 1.6rem;
+}
+
+.flex {
+    display: flex;
+    gap: 10px
+}
+
+.iconChooseUs {
+    width: 36px;
+    height: 30px;
+}
+
+.textHeaderChooseUsBlack {
+    color: black; 
+    margin-left: 16px;
+    font-size: 1.4rem;
+}
+
+.textChooseUsBlack {
+    color: black;
+    padding-bottom: 30px;
+}
+
+.textChooseUsWhite {
+    color: var(--white);
+}
+
+.textHeaderChooseUsWhite {
+    color: var(--white); 
+    margin-left: 16px;
+    font-size: 1.4rem;
+}
+
+.headerChooseUs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blockChooseUsGreen {
+    background-color: var(--green);
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+.blockChooseUsBlack {
+    background-color: var(--dark);
+    border-color: var(--white);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.moreA:hover {
+    color: var(--green);
+}
+.moreA:active {
+    color: var(--white);
+}
+
+.checkMark {
+    margin-left: 10px;
+}
+
+/* ------------------------------Roadmap------------------------------------------ */
+.hRoadmap {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.circleNumber {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark); 
+    background-color: var(--white);
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.circleNumberGreen {
+    background-color: var(--green);
+    box-shadow: 0px 3px 10px var(--green);
+}
+
+.circleNumberBlack {
+    background-color: var(--black);
+    color: var(--grace);
+    border-color: var(--grace);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.roadmapLists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.roadmapBlock {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.roadmapList {
+    display: flex;
+    column-gap: 12px;
+}
+
+.roadmapListElement {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.greenText {
+    color: var(--green);
+}
+
+.graceText {
+    color: var(--grace);
+}
+
+/* -------------------------TOKENOMICS-------------------------- */
+.hToken {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.runLineUp {
+    color: var(--dark);
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    font-size: 0.8rem;
+    transform: rotate(-5deg);
+    margin: 50px 0 25px 0;
+    font-family: 'imbpLexMono-regular';
+}
+
+.runLineDown {
+    transform: rotate(3deg);
+}
+
+.listToken {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.blockToken {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+    height: 62px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid var(--white);
+}
+
+.tokenRight {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 15px;
+    align-items: center;
+    width: 140px;
+    height: 104%;
+    border: 1px solid var(--green);
+    padding-right: 20px;
+    color: var(--dark);
+    background-color: var(--green);
+    margin-right: -1px;
+    font-family: 'neueMachina-regular';
+}
+
+.tokenLink {
+    color: var(--white);
+    font-family: 'imbpLexMono-regular';
+    display: inline;
+    max-width: 100px;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ------------------------START------------------------- */
+
+.hStart {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.imgStart {
+    width: 290px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.textStart {
+    font-size: 0.7rem;
+    padding-bottom: 10px;
+    max-width: 290px;
+}
+
+.buttonStart {
+    background-color:var(--green);
+    color: var(--dark);
+    border-radius: 10px;
+    border: none;
+    width: 247px;
+    height: 42px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'neueMachina-regular';
+}
+.buttonStart:hover {
+    box-shadow: 0 0 10px var(--green);
+}
+
+/* ----------------------------------------------DONT STOP THERE--------------------------------------------- */
+label {  
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'neueMachina-regular';
+    font-size: 1rem;
+    color: var(--white);
+    opacity: 1;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'imbpLexMono-regular';
+    font-size: 0.8rem;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 15px;
+    width: 100%;
+    height: 48px;
+    padding-left: 20px;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+input::placeholder {
+    color: var(--white);
+    opacity: 0.8;
+}
+textarea::placeholder {
+    padding-bottom: 50px;
+    color: var(--white);
+    opacity: 0.8;
+}
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'neueMachina-regular';
+    font-size: 0.8rem;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 15px;
+    width: 100%;
+    height: 48px;
+    padding: 15px;
+    border: 1px solid var(--white);
+    min-height: 120px;
+    color: var(--white);
+}
+
+.h2Dont {
+    font-size: 1.5rem;
+    font-family: 'neueMachina-light';
+}
+
+.spanDont {
+    color: var(--green);
+}
+
+.submit {
+    font-size: 1.4rem;
+    font-family: 'neueMachina-light';
+    margin: 50px 0 20px 0;
+}
+
+.divForm {
+    margin-bottom: 16px;
+}
+
+.send {
+    background-color:var(--green);
+    color: var(--dark);
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    height: 62px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'neueMachina-regular';
+}
+.send:hover {
+    box-shadow: 0 0 10px var(--green);
+}
+
+.psSend {
+    color: var(--grace);
+    font-size: 0.75rem;
+}
+/* ------------------------------------------FAQ-------------------------------------------------------------------- */
+.hFAQ {
+    margin-bottom: 20px;
+}
+
+.lorem {
+    font-family: 'imbpLexMono-regular';
+    font-size: 0.8rem;
+    margin: 10px;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+    padding: 20px;
+}
+.arrowDown {
+    width: 20px;
+    height: 10px;
+    flex-shrink: 0;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+    width: 20px;
+    height: 10px;
+    flex-shrink: 0;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'imbpLexMono-regular';
+    font-size: 0.8rem;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 15px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: 15px 30px 15px 30px;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+details[open] .arrowDown {
+    display: none;
+}
+
+details[open] summary {
+    background-color: var(--green);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+details:not([open]) .arrowUp {
+    display: none;
+}
+
+.writeToUs {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'imbpLexMono-regular';
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    padding: 10px;
+    width: 246px;
+    margin-top: 30px;
+}
+/* -------------------------FOOTER--------------------------- */
+.footer {
+    border-top: 1px solid var(--grace);
+}
+
+.itemsHexaCore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hexaCoreDown {
+    scale: 100%;
+    margin-bottom: 15px;
+}
+
+.listFooter {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--grace);
+}
+.listFooter:hover {
+    color: var(--green);
+}
+.listFooter:active {
+    color: var(--white);
+}
+
+.itemsFooter {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin: 50px 0 20px 0;
+}
+
+.PS {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.seePC {
+    display: none;
+}
+/* adaptive------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------640--------------------------------------------------- */
+@media (min-width: 640px) { 
+    .body {
+        background-image: url("/pictures/FonTab.png");
+    }
+
+    p, span {
+        font-size: 0.9rem;
+    }
+
+    .aiMl {
+        font-size: 3.1rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .wrapper {
+        max-width: 640px;
+        padding: 0 30px;
+        padding-top: 20px;
+    }
+
+    .centerContent {
+        place-self: center;
+    }
+
+    .buy {
+        font-size: 1rem;
+        padding: 7px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .viewNode {
+        font-size: 1rem;
+        justify-content: center;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .hideTab {
+        display: block;
+    }
+
+    .h1Decent {
+        display: block;
+        max-width: min-content;
+        place-self: center;
+    }
+
+    .textAsWell {
+        font-size: 0.9rem;
+        place-self: center;
+        width: 500px;
+    }
+
+    .line {
+        transform: translateY(-5px);
+        margin-left: 85px;
+        scale: 145%;
+    }
+
+    .circle {
+        top: -10px;
+        right: 45px;
+    }
+    /* ----------------------------------Why choose us------------------------------------------- */
+    .hWhyChooseUs {
+        font-size: 2rem;
+    }
+
+    .blockChooseUsGreen {
+        width: 280px;
+        height: 268px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    /* --------------------------------Tokenomics-------------------- */
+    .hToken {
+        font-size: 2rem;
+    }
+
+    .runLineUp {
+        line-height: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 90px 0 70px 0;
+    }
+    
+    .tokenRight {
+        width: 250px;
+    }
+    
+    .tokenRightDiv {
+        width: 140px;
+    }
+
+    .tokenLink {
+        display: block;
+        max-width: none;
+        font-size: 1rem;
+    }
+    
+    /* --------------Roadmap------------------------------------------ */
+    .hRoadmap {
+        font-size: 2rem;
+    }
+
+    /* -----------------Start------------------------------------------------------- */
+    .hStart {
+        font-size: 2rem;
+    }
+
+    .imgStart {
+        width: 448px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .textStart {
+        font-size: 0.9rem;
+        padding-bottom: 20px;
+        max-width: 550px;
+    }
+
+    .buttonStart {
+        width: 247px;
+        height: 65px;
+        padding: 0;
+        margin: 5px;
+        font-size: 1.2rem;
+    }
+    /* ------------------------Dont stop there----------------------------------------- */
+    .h2Dont {
+        font-size: 2rem;
+        font-weight: 600;
+        max-width: 500px;
+    }
+
+    .submit {
+        font-size: 2rem;
+        margin-top: 70px 0 40px 0;
+    }
+    
+    .divForm {
+        margin-bottom: 30px;
+    }
+    
+    .send {
+        height: 53px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    
+    .psSend {
+        font-size: 0.8rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+    
+    input {
+        font-size: 0.9rem;
+        height: 48px;
+        padding-left: 30px;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+        padding-left: 30px;
+    }
+    /* -----------------------FAQ------------------------------------- */
+    .hFAQ {
+        margin-bottom: 40px;
+    }
+    
+    .lorem {
+        font-size: 1rem;
+    }
+    .arrowDown {
+        width: 25px;
+        height: 12.5px;
+    }
+    
+    .arrowUp {
+        width: 25px;
+        height: 12.5px;
+    }
+    
+    summary {
+        font-size: 1.1rem;
+    }
+    
+    .writeToUs {
+        font-size: 1.1rem;
+        padding: 10px 20px 10px 20px;
+        width: 246px;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+    .imgEmail {
+        scale: 140%;
+    }
+}
+/* ------------------------------------------------------------------960--------------------------------------------------- */
+@media (min-width: 960px) {
+    .section {
+        margin-bottom: 100px;
+    }
+    
+    .body {
+        background-image: url("/pictures/FonTab2.png");
+    }
+
+    p, span {
+        font-size: 0.9rem;
+    }
+
+    .aiMl {
+        font-size: 3.1rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .wrapper {
+        max-width: 960px;
+        padding: 0 80px;
+        padding-top: 30px;
+    }
+
+    .header {
+        margin-bottom: 100px;
+    }
+
+    .hideTab2 {
+        display: block;
+    }
+
+    .centerContent {
+        place-self: center;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .hexaCore {
+        display: none;
+    }
+
+    .bigHeader {
+        display: flex;
+        gap: 40px;
+        border: 1px solid rgb(227, 254, 15, 0.1);
+        border-radius: 10px;
+        padding: 10px 20px 10px 20px;
+        color: gray;
+    }
+
+    .MenuSocials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menuList {
+        color: var(--grace);
+        font-size: 0.9rem;
+    }
+    .menuList:hover {
+        color: var(--green);
+    }
+    .menuList:active {
+        color: var(--white);
+    }
+
+    .dApp {
+        width: 145px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .micro {
+        display: block;
+        scale: 110%
+    }
+
+    .decentAndMicro {
+        display: flex;
+        gap: 20px;
+    }
+
+    .circle {
+        top: 0px;
+        right: -10px;
+        scale: 145%;
+    }
+
+    .decent {
+        margin-right: 62px;
+    }
+
+    .line {
+        transform: translateY(-5px);
+        margin-left: 23px;
+        scale: 145%;
+    }
+    
+    .viewNode {
+        height: 50px;
+        width: 149px;
+        padding: 15px;
+    }
+    
+    .textAsWell {
+        text-align: left;
+        margin: 20px 95px 20px 0px;
+        width: 400px;
+    }
+    
+    .arrow {
+        margin-top: 3px;
+    }
+    
+    .buy {
+        width: 149px;
+        height: 50px;
+        padding: 15px;
+    }
+    
+    .viewBuy {
+        display: flex; 
+        justify-content: left;
+    }
+    
+    .small {
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+    .textDownViewBuy {
+        justify-content: left;
+        margin-top: 43px;
+        gap: 50px;
+        font-size: 0.9rem;
+    }
+    /* -------------------------Why choose us-------------------------------- */
+    .blockChooseUsGreen {
+        width: 375px;
+        height: 220px;
+    }
+
+    .more {
+        display: none;
+    }
+    /* -----------------------------------Roadmap--------------------------- */
+    .roadmapLists {
+        flex-wrap: nowrap;
+
+    }
+
+    /* --------------------------------Tokenomics-------------------------- */
+
+    .twoListToken {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .hToken {
+        font-size: 2.2rem;
+    }
+
+    .runLineUp {
+        margin: 130px 0 90px 0;
+
+    }
+
+    .blockToken {
+        height: 53px;
+        width: 375px;
+    }
+
+    .blockTokenDiv {
+        width: 760px;
+    }
+    
+    .tokenRight {
+        width: 182px;
+    }
+
+    /* -------------------------Start----------------------------- */
+
+    .revers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .imgStart {
+        width: 375px;
+        height: 320px;
+        padding-bottom: 10px;
+    }
+
+    .hideImgStart {
+        display: none;
+    }
+
+    .textStart {
+        padding-bottom: 20px;
+        max-width: 390px;
+    }
+
+    /* -----------------------------Dont stop there----------------------- */
+
+    .h2Dont {
+        max-width: 640px;
+    }
+
+    /* -----------------------------------FAQ--------------------------------- */
+    .TextFaq {
+        width: 200px;
+    }
+
+    details {
+        width: 540px;
+    }
+    /* -----------------------footer------------------------------------- */
+    .itemsHexaCore {
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .listFooter {
+        font-size: 0.8rem;
+    }
+
+    .itemFooter {
+        scale: 85%;
+    }
+
+    .realListFooter {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .itemsFooter {
+        column-gap: 15px;
+        margin: 0;
+    }
+}
+/* ------------------------------1200------------------------------------------- */
+@media (min-width: 1200px) {
+    .section {
+        margin-bottom: 100px;
+    }
+    
+    .body {
+        background-image: url("/pictures/Fon1200.png");
+    }
+
+    p, span {
+        font-size: 1rem;
+    }
+
+    .aiMl {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h1 {
+        font-size: 3.2rem;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 80px;
+        padding-top: 30px;
+    }
+
+    .micro {
+        display: block;
+        scale: 130%;
+        min-height: 300px;
+    }
+
+    .decentAndMicro {
+        display: flex;
+        gap: 100px;
+    }
+
+    .circle {
+        top: 0px;
+        right: -5px;
+        scale: 135%;
+    }
+
+    .decent {
+        margin-right: 62px;
+    }
+    
+    .viewNode, .buy {
+        height: 67px;
+        width: 270px;
+        border-radius: 15px;
+        font-size: 1.3rem;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .textAsWell {
+        text-align: left;
+        margin: 20px 0px 20px 0px;
+        width: 520px;
+        font-size: 1rem;
+    }
+    
+    .arrow {
+        margin-top: 8px;
+        scale: 180%;
+    }
+
+    .dollar {
+        margin-top: 5px;
+        scale: 160%;
+    }
+    
+    .viewBuy {
+        display: flex; 
+        justify-content: left;
+    }
+    
+    .small {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .textDownViewBuy {
+        justify-content: left;
+        margin-top: 43px;
+        gap: 50px;
+        font-size: 1.3rem;
+    }
+    /* --------------------Why choose us---------------- */
+    .hWhyChooseUs {
+        font-size: 2.6rem;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blocksWhy {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .blockChooseUsGreen {
+        width: 320px;
+        height: 260px;
+        padding: 30px;
+    }
+
+    .headerChooseUs {
+        gap: 20px;
+    }
+
+    .more {
+        display: none;
+    }
+    /* ------------------------------------Roadmap------------------------------- */
+    .hRoadmap {
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+    }
+
+    .checkmark {
+        scale: 180%;
+    }
+    
+    .circleNumber {
+        width: 100px;
+        height: 100px;
+        font-size: 2.6rem;
+    }
+
+    .roadmapList {
+        display: flex;
+        column-gap: 20px;
+    
+    }
+    
+    .roadmapLists {
+        gap: 40px;
+    }
+    
+    .roadmapBlock {
+        row-gap: 20px;
+    }
+
+    .roadmapListElement {
+        margin-bottom: 10px;
+        gap: 20px;
+        font-size: 1rem;
+    }
+    /* ----------------------Tokenomics------------------ */
+
+    .twoListToken {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .hToken {
+        font-size: 2.4rem;
+        margin-bottom: 60px;
+    }
+
+    .runLineUp {
+        margin: 180px 0 120px 0;
+
+    }
+
+    .blockToken {
+        height: 74px;
+        width: 490px;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        padding-left: 30px;
+    }
+
+    .blockTokenDiv {
+        width: 1000px;
+    }
+    
+    .tokenRight {
+        width: 237px;
+    }
+
+    /* -------------------------------Start------------------------------------ */
+    .hStart {
+        font-size: 2.9rem;
+    }
+    
+    .imgStart {
+        width: 496px;
+        height: 383px;
+        padding-bottom: 10px;
+    }
+
+    .revers {
+        gap: 20px;
+    }
+
+    .textStart {
+        padding-bottom: 20px;
+        max-width: 530px;
+    }
+
+    .textStart {
+        font-size: 1.1rem;
+    }
+
+    .buttonStart {
+        width: 320px;
+        height: 80px;
+        margin: 10px 0;
+    }
+    /* -----------------------------Dont stop there---------------------------- */
+    .h2Dont {
+        max-width: 900px;
+        font-size: 2.8rem;
+    }
+    
+    .submit {
+        font-size: 2.8rem;
+        margin: 120px 0 40px 0;
+    }
+
+    label {  
+        margin-bottom: 20px;
+    }
+
+    input {
+        font-size: 1rem;
+        height: 71px;
+        padding-left: 30px;
+    }
+
+    textarea {
+        font-size: 1rem;
+        height: 48px;
+        min-height: 141px;
+        padding: 30px;
+    }
+
+    .send {
+        height: 80px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .psSend {
+        font-size: 1rem;
+    } 
+
+    /* ----------------------FAQ-------------------------- */
+    
+    .TextFaq {
+        width: 300px;
+    }
+
+    details {
+        width: 660px;
+        margin-bottom: 30px;
+    }
+
+    .writeToUs {
+        font-size: 1.2rem;
+        width: 289px;
+        height: 65px;
+        margin-top: 60px;
+    }
+
+    summary {
+        font-size: 1.3rem;
+    }
+
+    .arrowDown {
+        width: 25px;
+        height: 14px;
+    }
+
+    /* ---------------------------footer------------------------- */
+
+    .listFooter {
+        font-size: 0.85rem;
+    }
+
+    .realListFooter {
+        gap: 30px;
+    }
+    
+    .itemsFooter {
+        column-gap: 20px;
+    }
+
+    .PS {
+        font-size: 1rem;
+        margin: 10px 0 50px 0;
+    }
+}
+@media (min-width: 1920px) {
+    .section {
+        margin-bottom: 100px;
+    }
+    
+    .body {
+        background-image: url("/pictures/Fon1920.png");
+    }
+
+    .aiMl {
+        font-size: 6rem;
+    }
+    
+    h1, h2 {
+        font-size: 6rem;
+    }
+    
+    .wrapper {
+        max-width: 1920px;
+        padding: 30px 80px 30px;
+    }
+    .micro {
+        scale: 230%;
+        min-height: 600px;
+    }
+
+    .decentAndMicro {
+        display: flex;
+        gap: 300px;
+    }
+
+    .line {
+        transform: translateY(-2px);
+        margin-left: 90px;
+        scale: 280%;
+    }
+
+    .circle {
+        top: 0px;
+        right: -20px;
+        scale: 120%;
+    }
+
+    .textAsWell {
+        text-align: left;
+        margin: 30px 400px 80px 0px;
+        width: 540px;
+        font-size: 1rem;
+    }
+
+    .textDownViewBuy {
+        margin-top: 150px;
+    }
+
+    .bigHeader {
+        display: flex;
+        gap: 50px;
+        border-radius: 15px;
+        padding: 20px 0 20px 60px;
+        width: 680px;
+    }
+
+    .hexaCoreBig {
+        scale: 150%;
+        margin-right: 40px;
+    }
+
+    .menuList {
+        font-size: 1.1rem;
+    }
+
+    .dApp {
+        width: 210px;
+        height: 60px;
+        border-radius: 15px;
+    }
+    /* -----------------------Why choose us---------------------------- */
+    .hWhyChooseUs {
+        font-size: 4rem;
+        margin-bottom: 80px;
+    }
+    
+    .iconChooseUs {
+        scale: 150%;
+    }
+
+    .blockChooseUsGreen {
+        width: 560px;
+        height: 300px;
+        padding: 40px 60px;
+    }
+
+    .textHeaderChooseUsBlack, .textHeaderChooseUsWhite {
+        font-size: 2rem;
+    }
+
+    .textChooseUsBlack {
+        font-size: 1.1rem;
+        padding-top: 40px;
+    }
+
+    /* -------------------------Roadmap----------------------- */
+    .hRoadmap {
+        font-size: 4rem;
+    }
+    
+    .circleNumber {
+        width: 125px;
+        height: 125px;
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    
+    .roadmapLists {
+        gap: 40px;
+    }
+    
+    .roadmapBlock {
+        row-gap: 20px;
+    }
+
+    .roadmapListElement {
+        margin-bottom: 20px;
+        gap: 20px;
+        font-size: 0.7rem;
+    }
+    /*----------------------Tokenomics--------------------------- */
+    #tokenomics {
+        place-self: center;
+    }
+
+    .hToken {
+        font-size: 3.7rem;
+    }
+
+    .runLineUp {
+        height: 100px;
+        font-size: 1.5rem;
+    }
+
+    .blockToken {
+        height: 74px;
+        width: 490px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        padding-left: 30px;
+    }
+
+    .blockTokenDiv {
+        width: 1000px;
+    }
+
+    .tokenLink {
+        font-size: 1.5rem;
+    }
+    
+    .tokenRight {
+        width: 237px;
+        font-size: 1.5rem;
+    }
+    /* ------------------------Start-------------------------- */
+    .hStart {
+        font-size: 4rem;
+        margin-bottom: 50px;
+    }
+    
+    .imgStart {
+        width: 940px;
+        height: 620px;
+    }
+
+    .textStart {
+        max-width: 550px;
+    }
+
+    .textStart {
+        font-size: 1.1rem;
+    }
+
+    .buttonStart {
+        width: 350px;
+        height: 80px;
+        margin: 40px 0;
+        font-size: 1.5rem;
+    }
+
+    .hidePC {
+        display: none;
+    }
+
+    .seePC {
+        display: block;
+    }
+    /* ----------------------------Dont stop there-------------------------------- */
+    .h2Dont {
+        max-width: 1700px;
+        font-size: 4rem;
+    }
+
+    .allSubmit {
+        max-width: 1000px;
+        place-self: center;
+    }
+    
+    .submit {
+        font-size: 4rem;
+    }
+
+    label {  
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        font-size: 1.2rem;
+    }
+    /* ----------------------------FAQ--------------------------- */
+    .hFAQ {
+        font-size: 4rem;
+    }
+    
+    .TextFaq {
+        width: 320px;
+        font-size: 1.1rem;
+    }
+
+    details {
+        width: 950px;
+        margin-bottom: 30px;
+    }
+
+    .writeToUs {
+        font-size: 1.5rem;
+        padding: 30px;
+        width: 332px;
+        height: 75px;
+    }
+
+    summary {
+        font-size: 1.5rem;
+    }
+
+    .arrowDown {
+        width: 25px;
+        height: 14px;
+    }
+    /* -------------------------Footer-------------------------- */
+    .hexaCoreDown {
+        scale: 160%;
+    }
+}
+
