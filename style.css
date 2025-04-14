@@ -76,6 +76,10 @@ h2 {
     color: var(--white);
     font-family: 'neueMachina-light';
 }
+.textDownViewBuy h2 {
+    font-size: 1.2rem;
+    font-family: 'neueMachina-light';
+}
 
 h1 {
     margin: 0;
@@ -261,6 +265,7 @@ button {
     gap: 15px;
     font-size: 0.8rem;
 }
+
 
 .micro {
     display: none;
@@ -1201,6 +1206,9 @@ details:not([open]) .arrowUp {
     h2 {
         font-size: 2.4rem;
     }
+    .textDownViewBuy h2 {
+        font-size: 1.4rem;
+    }
     
     h1 {
         font-size: 3.2rem;
@@ -1501,7 +1509,10 @@ details:not([open]) .arrowUp {
     h1, h2 {
         font-size: 6rem;
     }
-    
+    .textDownViewBuy h2 {
+        font-size: 2.4rem;
+    }
+
     .wrapper {
         max-width: 1920px;
         padding: 30px 80px 30px;
